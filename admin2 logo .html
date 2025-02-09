@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            height: 190px;
+            width: 100%;
+            margin: 25px auto;
+            background-color: #c05cd4;
+
+        }
+
+        td {
+            /*padding-left:20px;*/
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        td input {
+            width: 50%;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .box {
+            height: 150px;
+            width: 200px;
+            font-size: 30px;
+            text-align: center;
+            padding: 25px;
+            padding-bottom: 40px;
+            margin: 20px;
+            background-color: white;
+            /* border: 2px solid black ; */
+            border-radius: 20%;
+            display: flex;
+
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .container {
+            background-color: rgb(247, 235, 255);
+            ;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box img {
+            height: 60px;
+            width: 65px;
+            border: none;
+            padding: 20px;
+        }
+
+        .box:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 1),
+                10px 8px 5px #e30fff58;
+
+
+        }
+
+        body {
+            background-color: rgb(247, 235, 255);
+        }
+
+
+
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li {
+            display: inline-flex;
+            padding: 15px;
+
+        }
+
+        ul li:hover {
+            background-color: #6674CC;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+
+        .n:hover {
+            background-color: rgba(255, 196, 0, 0.9);
+
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+
+        ul li:hover .dropdown {
+            display: block;
+            position: absolute;
+            margin-left: -15px;
+            margin-top: 36px;
+        }
+
+        .dropdown ul li {
+            display: block;
+            color: black;
+        }
+
+        .dropdown ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        input {
+            border: none;
+            background-color: transparent;
+        }
+
+        dotlottie-player {
+            height: 130px;
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+
+
+
+
+
+    <div class="nav">
+        <ul>
+            <div class="name">
+                <li class="n">img</li>
+                <li class="n">Institution Name</li>
+            </div>
+            <div class="home">
+                <li id="start"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li>
+                    <form action="" method="post" class="btn"><input type="submit" name="logout" value="Logout"></form>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+
+    <table>
+        <tr>
+            <td class="a" rowspan="2"><img src=""><br>add image</td>
+            <td class="a">name: <input type="text" name="name" placeholder="<?php echo $id; ?>"> </td>
+        </tr>
+
+    </table>
+
+
+
+    <div class="container">
+
+        <a href="add_student.php">
+            <div class="box">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/85793385-e5ad-410d-8962-9fa7fabd63a9/go4LTDjedX.json"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
+                Add Student
+            </div>
+        </a>
+
+        <a href="view_student.php">
+            <div class="box">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/c599698f-078f-423d-a306-6a16084433bc/RaGYzSWJtM.json"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
+                View Student
+            </div>
+        </a>
+
+        <a href="add_admin.php">
+            <div class="box">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/f300c85a-5bdd-4274-8974-195789d0f2f7/o6VjdRsI4C.json"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
+                Add Admin
+            </div>
+        </a>
+
+        <a href="add_notic.php">
+            <div class="box">
+                
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
+                <dotlottie-player src="https://lottie.host/222c60c6-7ed7-4c42-bca7-a981eb9f4a1f/FqZcXTZm8m.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                
+                Add Notice</div>
+        </a>
+
+        <a href="add_notic.php">
+            <div class="box">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/0684f3bf-dedc-442a-8c8f-5fcbd17e39bd/EzSdot3oYy.json"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
+
+                Details
+            </div>
+        </a>
+    </div>
+
+
+
+
+</body>
+
+</html>

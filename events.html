@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eccaff;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;    
+        }
+        
+        .a {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        
+            box-shadow: 6px 6px 10px -1px rgba(65, 10, 101, 0.58),
+                -6px -6px 10px -1px rgba(255, 100, 255, 0.635);
+        
+            padding: 30px;
+            margin: 10px;
+            
+            transition: transform 0.2s ease;
+        }
+        .a h2 {
+            font-size: 18px;
+            color: #003366;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .a p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        .a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px 13px rgba(255, 100, 255, 0.635);
+            transition: 0.5s ease;
+        }
+
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+    <div class="nav slideUp">
+        <ul class="nav_ul">
+            <div class="nav_left slideUp">
+                <li class="n_logo"><img class="logo" src="img/logo.png"></li>
+                <li class="n"><b>ABC Institution</b></li>
+            </div>
+            <div class="nav_right slideUp">
+                <li id="start"><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html#course"><b>Courses</b></a></li>
+                <li><a href="index.html#aboutredirect"><b>About us</b></a></li>
+                <li><a href="index.html#contact"><b>Contact us</b></a></li>
+                <li><b>Log in</b>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="student_login.php"><b>Student</b></a></li>
+                            <li><a href="teacher_login.php"><b>Teacher</b></a></li>
+                            <li><a href="admin_login.php"><b>Admin</b></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="admission.php"><b>Admissions open</b></a></li>
+        </ul>
+    </div><br><br>
+
+    <h2 style="padding: 10px;
+    text-align:center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to right, #eccaff, #d17eff);">UPCOMING EVENTS</h2>
+    <div class="container">
+
+        <div class="a">
+            <h2>3-Days Entrepreneurship Development Program</h2>
+            <p><b>DATE:</b>23rd November, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>The Road to Funding: Navigating Obstacles in Startup Growth</p>
+        </div>
+
+        <div class="a">
+            <h2>JIMSH & BBIT PRESENT MAGNUS, 2024</h2>
+            <p><b>DATE:</b>20th December, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>Inter College Sports Competition & Curriculam Activities</p>
+        </div>
+
+        <div class="a">
+            <h2>JIMSH & BBIT PRESENT MAGNUS, 2024</h2>
+            <p><b>DATE:</b>20th December, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>Inter College Sports Competition & Curriculam Activities</p>
+        </div>
+
+        <div class="a">
+            <h2>JIMSH & BBIT PRESENT MAGNUS, 2024</h2>
+            <p><b>DATE:</b>20th December, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>Inter College Sports Competition & Curriculam Activities</p>
+        </div>
+
+        <div class="a">
+            <h2>JIMSH & BBIT PRESENT MAGNUS, 2024</h2>
+            <p><b>DATE:</b>20th December, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>Inter College Sports Competition & Curriculam Activities</p>
+        </div>
+
+        <div class="a">
+            <h2>JIMSH & BBIT PRESENT MAGNUS, 2024</h2>
+            <p><b>DATE:</b>20th December, 2024</p>
+            <p><b>TIME</b>11:30am onwards</p>
+            <p><b>VENUE:</b>Seminar Hall</p>
+            <p>Inter College Sports Competition & Curriculam Activities</p>
+        </div>
+    </div>
+</body>
+
+</html>
